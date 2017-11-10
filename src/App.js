@@ -1,8 +1,10 @@
-import React, { Component } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
 
-import AjaxCall from "./asyncCalls/AjaxCall";
+import CallbackCall from './asyncCalls/CallbackCall';
+import PromiseCall from './asyncCalls/PromiseCall';
+import AsyncAwaitCall from './asyncCalls/AsyncAwaitCall';
 
 class App extends Component {
   render() {
@@ -15,7 +17,9 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <AjaxCall />
+        <CallbackCall />
+        <PromiseCall />
+        <AsyncAwaitCall />
       </div>
     );
   }
