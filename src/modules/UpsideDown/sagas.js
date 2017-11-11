@@ -1,9 +1,11 @@
+// @flow
+
 import { all, takeEvery, call, put } from 'redux-saga/effects';
 import UpsideDownPromise from '../../services/UpsideDownPromise';
 
 import { updateStatus } from './actions';
 
-function* toggleCall() {
+function* toggleCall(): Generator<*, *, *> {
   const upsideDown = new UpsideDownPromise();
   yield call([upsideDown, upsideDown.enter]);
   yield put(updateStatus('In under world'));
@@ -19,6 +21,6 @@ function* toggleCall() {
   }
 }
 
-export default function*() {
+export default function*(): Generator<*, *, *> {
   yield all([takeEvery('TOGGLE_CALL', toggleCall)]);
 }

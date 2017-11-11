@@ -15,7 +15,7 @@ import AsyncAwaitCall from './asyncCalls/AsyncAwaitCall';
 import SagaCall from './asyncCalls/SagaCall';
 
 type StateType = {
-  store: StoreType
+  store: ?StoreType
 };
 
 class App extends Component<null, StateType> {
@@ -41,11 +41,12 @@ class App extends Component<null, StateType> {
         <CallbackCall />
         <PromiseCall />
         <AsyncAwaitCall />
-        {this.state.store ? (
+
+        {this.state.store && (
           <Provider store={this.state.store}>
             <SagaCall />
           </Provider>
-        ) : null}
+        )}
       </div>
     );
   }

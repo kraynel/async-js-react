@@ -1,5 +1,7 @@
 // @flow
 
+import type { ActionType } from './actions';
+
 export type UpsideDownStateType = {
   status: string
 };
@@ -15,7 +17,7 @@ const INITIAL_STATE = {
 */
 export default (
   state: UpsideDownStateType = INITIAL_STATE,
-  action
+  action: ActionType
 ): UpsideDownStateType => {
   switch (action.type) {
     case 'UPDATE_STATUS':
