@@ -1,12 +1,33 @@
+// @flow
+
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import { Provider } from 'react-redux';
+
+import type StoreType from './modules/reducers';
+import createStore from './modules/store';
+
 import CallbackCall from './asyncCalls/CallbackCall';
 import PromiseCall from './asyncCalls/PromiseCall';
 import AsyncAwaitCall from './asyncCalls/AsyncAwaitCall';
+import SagaCall from './asyncCalls/SagaCall';
 
-class App extends Component {
+type StateType = {
+  store: StoreType
+};
+
+class App extends Component<null, StateType> {
+  state = {
+    store: null
+  };
+
+  componentDidMount() {
+    const store = createStore();
+    this.setState({ store });
+  }
+
   render() {
     return (
       <div className="App">
@@ -20,6 +41,11 @@ class App extends Component {
         <CallbackCall />
         <PromiseCall />
         <AsyncAwaitCall />
+        {this.state.store ? (
+          <Provider store={this.state.store}>
+            <SagaCall />
+          </Provider>
+        ) : null}
       </div>
     );
   }
