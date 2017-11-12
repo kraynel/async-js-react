@@ -1,7 +1,7 @@
 // @flow
 
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import asyncFunctions from './asynchronous-javascript.png';
 import './App.css';
 
 import { Provider } from 'react-redux';
@@ -38,12 +38,8 @@ class App extends Component<null, StateType> {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <img src={asyncFunctions} className="App-image" alt="logo" />
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
         <CallbackCall />
         <PromiseCall />
         <AsyncAwaitCall />
