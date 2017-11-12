@@ -1,5 +1,57 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`AsyncAwaitCall should fail to kill the demogorgon 1`] = `
+<div>
+  <button
+    onClick={[Function]}
+  >
+    Async/await Call
+  </button>
+  <span>
+    You are dead ☠️
+  </span>
+</div>
+`;
+
+exports[`AsyncAwaitCall should find the demogorgon 1`] = `
+<div>
+  <button
+    onClick={[Function]}
+  >
+    Async/await Call
+  </button>
+  <span>
+    Demogorgon in SOME PLACE
+  </span>
+</div>
+`;
+
+exports[`AsyncAwaitCall should go in the upside down 1`] = `
+<div>
+  <button
+    onClick={[Function]}
+  >
+    Async/await Call
+  </button>
+  <span>
+    In upside down
+  </span>
+</div>
+`;
+
+exports[`AsyncAwaitCall should kill the demogorgon 1`] = `
+<div>
+  <button
+    onClick={[Function]}
+  >
+    Async/await Call
+  </button>
+  <span>
+    Demogorgon dead ️☠️
+  </span>
+</div>
+`;
+
 exports[`AsyncAwaitCall should start in the real world 1`] = `
 <div>
   <button
