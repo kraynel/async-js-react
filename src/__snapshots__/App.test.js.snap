@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render without crashing 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="App-header"
+  >
+    <img
+      alt="logo"
+      className="App-image"
+      src="asynchronous-javascript.png"
+    />
+  </header>
+  <div>
+    <button
+      onClick={[Function]}
+    >
+      Callback Call
+    </button>
+    <span>
+      In real world
+    </span>
+  </div>
+  <div>
+    <button
+      onClick={[Function]}
+    >
+      Promise Call
+    </button>
+    <span>
+      In real world
+    </span>
+  </div>
+  <div>
+    <button
+      onClick={[Function]}
+    >
+      Async/await Call
+    </button>
+    <span>
+      In real world
+    </span>
+  </div>
+  <div>
+    <button
+      onClick={[Function]}
+    >
+      Saga Call
+    </button>
+    <span>
+      In real world
+    </span>
+  </div>
+  <div>
+    <button
+      onClick={[Function]}
+    >
+      Observable Call
+    </button>
+    <span>
+      In real world
+    </span>
+  </div>
+</div>
+`;

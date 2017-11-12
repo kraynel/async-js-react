@@ -40,6 +40,7 @@ class App extends Component<null, StateType> {
         <header className="App-header">
           <img src={asyncFunctions} className="App-image" alt="logo" />
         </header>
+
         <CallbackCall />
         <PromiseCall />
         <AsyncAwaitCall />
