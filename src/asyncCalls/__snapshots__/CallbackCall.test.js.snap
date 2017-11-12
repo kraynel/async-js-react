@@ -1,8 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CallbackCall should fail to kill the demogorgon 1`] = `
-<div>
+<div
+  className="buttonWithStatus"
+>
   <button
+    className="buttonToggleUpsideDown"
     onClick={[Function]}
   >
     Callback Call
@@ -14,8 +17,11 @@ exports[`CallbackCall should fail to kill the demogorgon 1`] = `
 `;
 
 exports[`CallbackCall should find the demogorgon 1`] = `
-<div>
+<div
+  className="buttonWithStatus"
+>
   <button
+    className="buttonToggleUpsideDown"
     onClick={[Function]}
   >
     Callback Call
@@ -27,8 +33,11 @@ exports[`CallbackCall should find the demogorgon 1`] = `
 `;
 
 exports[`CallbackCall should go in the upside down 1`] = `
-<div>
+<div
+  className="buttonWithStatus"
+>
   <button
+    className="buttonToggleUpsideDown"
     onClick={[Function]}
   >
     Callback Call
@@ -40,8 +49,11 @@ exports[`CallbackCall should go in the upside down 1`] = `
 `;
 
 exports[`CallbackCall should kill the demogorgon 1`] = `
-<div>
+<div
+  className="buttonWithStatus"
+>
   <button
+    className="buttonToggleUpsideDown"
     onClick={[Function]}
   >
     Callback Call
@@ -53,8 +65,11 @@ exports[`CallbackCall should kill the demogorgon 1`] = `
 `;
 
 exports[`CallbackCall should start in the real world 1`] = `
-<div>
+<div
+  className="buttonWithStatus"
+>
   <button
+    className="buttonToggleUpsideDown"
     onClick={[Function]}
   >
     Callback Call

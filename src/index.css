@@ -2,4 +2,22 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  color: white;
+  background-color: #01050f;
+}
+
+.buttonWithStatus {
+  padding: 10px;
+}
+
+.buttonToggleUpsideDown {
+  margin: 5px 30px;
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }

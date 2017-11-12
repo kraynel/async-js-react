@@ -13,8 +13,11 @@ exports[`App should render without crashing 1`] = `
       src="asynchronous-javascript.png"
     />
   </header>
-  <div>
+  <div
+    className="buttonWithStatus"
+  >
     <button
+      className="buttonToggleUpsideDown"
       onClick={[Function]}
     >
       Callback Call
@@ -23,8 +26,11 @@ exports[`App should render without crashing 1`] = `
       In real world
     </span>
   </div>
-  <div>
+  <div
+    className="buttonWithStatus"
+  >
     <button
+      className="buttonToggleUpsideDown"
       onClick={[Function]}
     >
       Promise Call
@@ -33,8 +39,11 @@ exports[`App should render without crashing 1`] = `
       In real world
     </span>
   </div>
-  <div>
+  <div
+    className="buttonWithStatus"
+  >
     <button
+      className="buttonToggleUpsideDown"
       onClick={[Function]}
     >
       Async/await Call
@@ -43,8 +52,11 @@ exports[`App should render without crashing 1`] = `
       In real world
     </span>
   </div>
-  <div>
+  <div
+    className="buttonWithStatus"
+  >
     <button
+      className="buttonToggleUpsideDown"
       onClick={[Function]}
     >
       Saga Call
@@ -53,8 +65,11 @@ exports[`App should render without crashing 1`] = `
       In real world
     </span>
   </div>
-  <div>
+  <div
+    className="buttonWithStatus"
+  >
     <button
+      className="buttonToggleUpsideDown"
       onClick={[Function]}
     >
       Observable Call

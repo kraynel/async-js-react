@@ -1,8 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AsyncAwaitCall should fail to kill the demogorgon 1`] = `
-<div>
+<div
+  className="buttonWithStatus"
+>
   <button
+    className="buttonToggleUpsideDown"
     onClick={[Function]}
   >
     Async/await Call
@@ -14,8 +17,11 @@ exports[`AsyncAwaitCall should fail to kill the demogorgon 1`] = `
 `;
 
 exports[`AsyncAwaitCall should find the demogorgon 1`] = `
-<div>
+<div
+  className="buttonWithStatus"
+>
   <button
+    className="buttonToggleUpsideDown"
     onClick={[Function]}
   >
     Async/await Call
@@ -27,8 +33,11 @@ exports[`AsyncAwaitCall should find the demogorgon 1`] = `
 `;
 
 exports[`AsyncAwaitCall should go in the upside down 1`] = `
-<div>
+<div
+  className="buttonWithStatus"
+>
   <button
+    className="buttonToggleUpsideDown"
     onClick={[Function]}
   >
     Async/await Call
@@ -40,8 +49,11 @@ exports[`AsyncAwaitCall should go in the upside down 1`] = `
 `;
 
 exports[`AsyncAwaitCall should kill the demogorgon 1`] = `
-<div>
+<div
+  className="buttonWithStatus"
+>
   <button
+    className="buttonToggleUpsideDown"
     onClick={[Function]}
   >
     Async/await Call
@@ -53,8 +65,11 @@ exports[`AsyncAwaitCall should kill the demogorgon 1`] = `
 `;
 
 exports[`AsyncAwaitCall should start in the real world 1`] = `
-<div>
+<div
+  className="buttonWithStatus"
+>
   <button
+    className="buttonToggleUpsideDown"
     onClick={[Function]}
   >
     Async/await Call

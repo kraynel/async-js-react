@@ -1,8 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ButtonWithStatus should display a button with a status 1`] = `
-<div>
+<div
+  className="buttonWithStatus"
+>
   <button
+    className="buttonToggleUpsideDown"
     onClick={[Function]}
   >
     Some text

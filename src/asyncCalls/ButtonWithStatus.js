@@ -11,8 +11,13 @@ type PropsType = {
 export default class ButtonWithStatus extends PureComponent<PropsType> {
   render() {
     return (
-      <div>
-        <button onClick={this.props.toggleCall}>{this.props.buttonText}</button>
+      <div className="buttonWithStatus">
+        <button
+          className="buttonToggleUpsideDown"
+          onClick={this.props.toggleCall}
+        >
+          {this.props.buttonText}
+        </button>
         <span>{this.props.strangerStatus}</span>
       </div>
     );
