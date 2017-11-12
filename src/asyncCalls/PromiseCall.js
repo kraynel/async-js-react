@@ -12,7 +12,7 @@ export default class PromiseCall extends Component {
   }
 
   toggleCall = () => {
-    this.upsideDownPromise
+    return this.upsideDownPromise
       .enter()
       .then(() => {
         this.setState({ strangerStatus: 'In upside down' });

@@ -1,5 +1,57 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`PromiseCall should fail to kill the demogorgon 1`] = `
+<div>
+  <button
+    onClick={[Function]}
+  >
+    Promise Call
+  </button>
+  <span>
+    You are dead ☠️
+  </span>
+</div>
+`;
+
+exports[`PromiseCall should find the demogorgon 1`] = `
+<div>
+  <button
+    onClick={[Function]}
+  >
+    Promise Call
+  </button>
+  <span>
+    Demogorgon in SOME PLACE
+  </span>
+</div>
+`;
+
+exports[`PromiseCall should go in the upside down 1`] = `
+<div>
+  <button
+    onClick={[Function]}
+  >
+    Promise Call
+  </button>
+  <span>
+    In upside down
+  </span>
+</div>
+`;
+
+exports[`PromiseCall should kill the demogorgon 1`] = `
+<div>
+  <button
+    onClick={[Function]}
+  >
+    Promise Call
+  </button>
+  <span>
+    Demogorgon dead ️☠️
+  </span>
+</div>
+`;
+
 exports[`PromiseCall should start in the real world 1`] = `
 <div>
   <button
