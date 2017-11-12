@@ -9,18 +9,24 @@ import { Provider } from 'react-redux';
 import type StoreType from './modules/reducers';
 import createStore from './modules/store';
 
+import UpsideDownStore from './mobxStores/UpsideDownStore';
+import { Provider as MobxProvider } from 'mobx-react';
+
 import CallbackCall from './asyncCalls/CallbackCall';
 import PromiseCall from './asyncCalls/PromiseCall';
 import AsyncAwaitCall from './asyncCalls/AsyncAwaitCall';
 import SagaCall from './asyncCalls/SagaCall';
+import ObservableCall from './asyncCalls/ObservableCall';
 
 type StateType = {
-  store: ?StoreType
+  store: ?StoreType,
+  mobxStore: UpsideDownStore
 };
 
 class App extends Component<null, StateType> {
   state = {
-    store: null
+    store: null,
+    mobxStore: new UpsideDownStore()
   };
 
   componentDidMount() {
@@ -47,6 +53,10 @@ class App extends Component<null, StateType> {
             <SagaCall />
           </Provider>
         )}
+
+        <MobxProvider store={this.state.mobxStore}>
+          <ObservableCall />
+        </MobxProvider>
       </div>
     );
   }
