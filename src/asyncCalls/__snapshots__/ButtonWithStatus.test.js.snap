@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonWithStatus should display a button with a status 1`] = `
+<div>
+  <button
+    onClick={[Function]}
+  >
+    Some text
+  </button>
+  <span>
+    some status
+  </span>
+</div>
+`;
