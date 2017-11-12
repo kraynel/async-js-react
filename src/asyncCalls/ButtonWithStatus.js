@@ -3,15 +3,16 @@
 import React, { PureComponent } from 'react';
 
 type PropsType = {
+  buttonText: string,
   toggleCall: () => void,
   strangerStatus: string
 };
 
-export default class ObservableCall extends PureComponent<PropsType> {
+export default class ButtonWithStatus extends PureComponent<PropsType> {
   render() {
     return (
       <div>
-        <button onClick={this.props.toggleCall}>Observable Call</button>
+        <button onClick={this.props.toggleCall}>{this.props.buttonText}</button>
         <span>{this.props.strangerStatus}</span>
       </div>
     );

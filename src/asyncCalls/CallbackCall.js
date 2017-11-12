@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import UpsideDown from '../services/UpsideDown';
+import ButtonWithStatus from './ButtonWithStatus';
 
 export default class CallbackCall extends Component {
   constructor(props) {
@@ -31,10 +32,11 @@ export default class CallbackCall extends Component {
 
   render() {
     return (
-      <div>
-        <button onClick={this.toggleCall}>Callback Call</button>
-        <span>{this.state.strangerStatus}</span>
-      </div>
+      <ButtonWithStatus
+        toggleCall={this.toggleCall}
+        buttonText="Callback Call"
+        strangerStatus={this.state.strangerStatus}
+      />
     );
   }
 }

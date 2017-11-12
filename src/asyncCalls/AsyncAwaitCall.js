@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import UpsideDownPromise from '../services/UpsideDownPromise';
+import ButtonWithStatus from './ButtonWithStatus';
 
 export default class AsyncAwaitCall extends Component {
   constructor(props) {
@@ -29,10 +30,11 @@ export default class AsyncAwaitCall extends Component {
 
   render() {
     return (
-      <div>
-        <button onClick={this.toggleCall}>Async/await Call</button>
-        <span>{this.state.strangerStatus}</span>
-      </div>
+      <ButtonWithStatus
+        toggleCall={this.toggleCall}
+        buttonText="Async/await Call"
+        strangerStatus={this.state.strangerStatus}
+      />
     );
   }
 }

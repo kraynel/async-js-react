@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import UpsideDownPromise from '../services/UpsideDownPromise';
+import ButtonWithStatus from './ButtonWithStatus';
 
 export default class PromiseCall extends Component {
   constructor(props) {
@@ -33,10 +34,11 @@ export default class PromiseCall extends Component {
 
   render() {
     return (
-      <div>
-        <button onClick={this.toggleCall}>Promise Call</button>
-        <span>{this.state.strangerStatus}</span>
-      </div>
+      <ButtonWithStatus
+        toggleCall={this.toggleCall}
+        buttonText="Promise Call"
+        strangerStatus={this.state.strangerStatus}
+      />
     );
   }
 }
