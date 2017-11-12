@@ -17,7 +17,7 @@ const INITIAL_STATE = {
 */
 export default (
   state: UpsideDownStateType = INITIAL_STATE,
-  action: ActionType
+  action: ActionType = {}
 ): UpsideDownStateType => {
   switch (action.type) {
     case 'UPDATE_STATUS':
