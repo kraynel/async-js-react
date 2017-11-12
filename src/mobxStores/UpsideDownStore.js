@@ -16,7 +16,7 @@ export default class UpsideDownStore {
 
     const place = await this.upsideDown.findDemogorgon();
     runInAction(() => {
-      this.status.set(`Found demogorgin in ${place}`);
+      this.status.set(`Found demogorgon in ${place}`);
     });
 
     const result = await this.upsideDown.killDemogorgon();
